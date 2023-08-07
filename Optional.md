@@ -35,3 +35,9 @@ Optional<Insurance> objectOptional = Optional.ofNullable(null);
 objectOptional.orElseGet(Insurance::new);
 ``
 - ## orElseThrow
+![[Pasted image 20230807170018.png]]
+orElseThrow 与 orElse 方法的区别在于，orElseThrow 方法当 Optional 中有值的时候，返回值；没有值的时候会抛出异常，抛出的异常由传入的 exceptionSupplier 提供。
+``
+Optional<Insurance> objectOptional = Optional.ofNullable(null);
+objectOptional.orElseThrow(() -> new RuntimeException("Not have reference"));
+``
