@@ -12,4 +12,10 @@ JDK 提供三个静态方法来构造一个Optional：
 |
 - ![[1691397730267.png]]
 ## 3. 相关方法
-- 
+- ### ifPresent
+![[Pasted image 20230807164643.png]]
+例:
+``
+Optional<User> user = Optional.ofNullable(getUserById(id));
+user.ifPresent(System::out.println);
+``
