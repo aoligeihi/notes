@@ -19,3 +19,8 @@ JDK 提供三个静态方法来构造一个Optional：
 Optional<User> user = Optional.ofNullable(getUserById(id));
 user.ifPresent(System::out.println);
 ``
+- ### orElse
+![[1691398348096 1.png]]
+Optional 中有值则将其返回，否则返回 orElse 方法传入的参数。
+例
+````
