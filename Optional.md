@@ -22,5 +22,16 @@ user.ifPresent(System::out.println);
 - ### orElse
 ![[1691398348096 1.png]]
 Optional 中有值则将其返回，否则返回 orElse 方法传入的参数。
-例
-````
+例:
+``
+Optional<Insurance> objectOptional = Optional.ofNullable(null);
+objectOptional.orElse(new Insurance());
+``
+- ### orElseGet
+![[1691398627261 1.png]]
+orElseGet 与 orElse 方法的区别在于，orElseGet 方法传入的参数为一个 Supplier 接口的实现 —— 当 Optional 中有值的时候，返回值；当 Optional 中没有值的时候，返回从该 Supplier 获得的值。
+``
+Optional<Insurance> objectOptional = Optional.ofNullable(null);
+objectOptional.orElseGet(Insurance::new);
+``
+- ## orElseThrow
