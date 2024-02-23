@@ -1,6 +1,7 @@
 ## 防火墙
 
-[https://blog.csdn.net/qq_24232123/article/details/79781527 ](https://blog.csdn.net/qq_24232123/article/details/79781527 https://blog.51cto.com/andyxu/2137046 )[https://zhuanlan.zhihu.com/p/445891257](https://zhuanlan.zhihu.com/p/445891257) centos7
+https://blog.csdn.net/qq_24232123/article/details/79781527
+https://zhuanlan.zhihu.com/p/445891257  centos7
 
 ```PowerShell
 # 关闭防火墙
