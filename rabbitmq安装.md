@@ -23,7 +23,7 @@ rpm -ivh rabbitmq-server-3.8.16-1.el7.noarch.rpm
 查看服务状态: `/sbin/service rabbitmq-server status`
 停止服务: `/sbin/service rabbitmq-server stop`
 开启web管理插件(先将服务关闭掉): `rabbitmq-plugins enable rabbitmq_management`
-访问地址: [访问地址](http://locahost:15672) (默认端口号: 15672), 如访问不了,查看是否开启防火墙
+访问地址: [http://ip:15672](http://ip:15672) (默认端口号: 15672), 如访问不了,查看是否开启防火墙
 
 ## 添加新用户
 
